@@ -1,0 +1,462 @@
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background: url("../images/background.png") center 0 no-repeat fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+}
+
+@font-face {
+    src: url("../fonts/Oswald-Light.ttf");
+    src: url("../fonts/Oswald-Bold.ttf");
+    src: url("../fonts/Oswald-Regular.ttf");
+    font-family: Oswald-Light;
+    font-family: Oswald-Bold;
+    font-family: Oswald-Regular;
+}
+
+div.right {
+    height: 60px;
+    text-align: right;
+    overflow: hidden;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.location {
+    margin-top: 30px;
+}
+
+#city {
+    display: block;
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    font-family: Oswald-Regular;
+    padding-left: 55px;
+    margin-top: 20px;
+}
+
+#country {
+    display: block;
+    font-size: 25px;
+    color: white;
+    font-family: Oswald-Regular;
+    padding-left: 55px;
+    margin-top: 20px;
+}
+
+.search-input {
+    height: 50px;
+    width: 200px;
+    background-color: red;
+    display: inline-block;
+    right: -198px;
+    top: 13px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.img-weather {
+    text-align: center;
+}
+
+.degrees {
+    font-family: Oswald-Regular;
+    font-size: 40px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.real-feel {
+    color: white;
+    font-family: Oswald-Regular;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.image-day img{
+    
+    width: 50px;
+    height: 50px;
+    margin-top: 6px;
+}
+
+.grid {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.row:after {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.row .col {
+    float: left;
+    padding: 5px;
+}
+
+.row .col {
+    float: left;
+}
+
+.col-xs-1 {
+    width: 8.33333%;
+}
+
+.col-xs-2 {
+    width: 16.66666%;
+}
+
+.col-xs-3 {
+    width: 25%;
+}
+
+.col-xs-4 {
+    width: 33.33333%;
+}
+
+.col-xs-5 {
+    width: 41.66666%;
+}
+
+.col-xs-6 {
+    width: 50%;
+}
+
+.col-xs-7 {
+    width: 58.33333%;
+}
+
+.col-xs-8 {
+    width: 66.66666%;
+}
+
+.col-xs-9 {
+    width: 75%;
+}
+
+.col-xs-10 {
+    width: 83.33333%;
+}
+
+.col-xs-11 {
+    width: 91.66666%;
+}
+
+.col-xs-12 {
+    width: 100%;
+}
+
+.placement-block {
+    height: 300px;
+}
+
+.weather-content-block {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 490px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.weather-day {
+    display: inline-block;
+    text-align: center;
+    width: 70px;
+}
+
+.weather-indicator {
+    height: 135px;
+    background: #00BFF3;
+    width: 30px;
+    border-radius: 15px;
+    margin: 8px auto;
+    transition: height 0.9s ease-in-out, background 0.4s ease;
+}
+
+.weather-day-indicators .nulled {
+    height: 30px !important;
+}
+
+.weather-indicator:hover {
+    background: #6BBFF3;
+    border: 2px solid white;
+}
+
+.weather-day-name {
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    border-color: white;
+    padding: 3px 1.3vw;
+}
+
+.weather-day-count {
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    opacity: 1;
+}
+
+.weather-day-count.dayly {
+    transition: opacity 0.6s ease;
+}
+
+.weather-day-count.nightly {
+    transition: opacity 1.9s ease;
+}
+
+.invis {
+    opacity: 0;
+}
+
+.grid-bg {
+    position: absolute;
+    margin: 0 auto;
+    max-width: inherit;
+    left: 0;
+    right: 0;
+    height: 2px;
+    border: 1px dashed rgba(255, 255, 255, 0.6862745098039216);
+    z-index: -1;
+}
+
+.grid-bg-1 {
+    margin-top: 111px;
+}
+
+.grid-bg-2 {
+    margin-top: 141px;
+}
+
+.grid-bg-3 {
+    margin-top: 181px;
+}
+
+.grid-bg-4 {
+    margin-top: 221px;
+}
+
+.invis {
+    opacity: 0;
+}
+
+
+/* Search styles */
+
+.sb-search {
+    display: inline-block;
+}
+
+.sb-search .sb-search-input {
+    width: 257px;
+    height: 34px;
+    background: transparent;
+    border-radius: 7px;
+    padding: 5px;
+    color: white;
+    border: 2px solid #04AEDA;
+    transition: box-shadow 0.3s ease;
+    margin-left: 3px;
+    margin-right: 3px;
+
+}
+
+.sb-search .sb-search-input:focus {
+    outline: none;
+    border-color: #04D9DA;
+    box-shadow: 0 0 7px #04D9DA;
+}
+
+.search-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    width: 263px;
+    margin-left: 10px;
+
+}
+
+.sb-search-submit {
+    display: none;
+}
+
+.sb-logo {
+    width: 263px;
+    height: 34px;
+    display: inline-block;
+}
+
+.simple {
+    float: right;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding-right: 55px;
+    display: flex;
+}
+
+.search-button {
+    width: 60px;
+    height: 61px;
+    cursor: pointer;
+}
+
+.sb-search {
+	transition: margin 0.7s ease-in-out;
+}
+
+.sb-search.hidden {
+	margin-left:  -263px;
+
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SimpleWeather</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" rel=""></script>
+</head>
+
+<body>
+    <header>
+        <div class="simple">
+            <img src="images/search.png" alt="search" class="search-button">
+            <div class="search-wrap">
+                <div id="sb-search" class="sb-search hidden">
+                    <form>
+                        <label>
+                            <input class="sb-search-input" placeholder="Type your location" type="text" value="" name="search" id="search">
+                            <input id="btnGetWeather16" class="sb-search-submit" type="button" value="">
+                        </label>
+                    </form>
+                </div>
+                <img src="images/logo.png" alt="logo" class="sb-logo">
+            </div>
+        </div>
+        <h1 id="city">Enter your city</h1>
+        <small id="country">Your country</small>
+    </header>
+    <section class="content">
+        <div class="img-weather">
+            <img src="images/cloud.png" alt="img-weather">
+            <p class="degrees"><span id="current-temp">0</span>&nbsp°C</p>
+            <p class="real-feel">REAL FEEL <span id="feels-like-temp">0</span>°C</p>
+        </div>
+    </section>
+    <section class="weather-content-block">
+        <div class="weather-day" id="monday">
+            <p class="weather-day-name">MON</p>
+            <div id="iconmonday" class="image-day"></div>
+            <p class="weather-day-count dayly invis monday"></p>
+            <div class="weather-day-indicators">
+                <div class="weather-indicator nulled">
+                </div>
+            </div>
+            <p class="weather-day-count nightly invis monday1"></p>
+        </div>
+        <div class="weather-day" id="tuesday">
+            <p class="weather-day-name">TUE</p>
+            <div id="iconthuesday" class="image-day"></div>
+            <p class="weather-day-count dayly invis tuesday"></p>
+            <div class="weather-day-indicators">
+                <div class="weather-indicator nulled">
+                </div>
+            </div>
+            <p class="weather-day-count nightly invis tuesday2"></p>
+        </div>
+        <div class="weather-day" id="wednesday">
+            <p class="weather-day-name">WED</p>
+            <div id="iconwednesday" class="image-day"></div>
+            <p class="weather-day-count dayly invis wednesday"></p>
+            <div class="weather-day-indicators">
+                <div class="weather-indicator nulled">
+                </div>
+            </div>
+            <p class="weather-day-count nightly invis wednesday3"></p>
+        </div>
+        <div class="weather-day" id="thursday">
+            <p class="weather-day-name">THU</p>
+            <div id="iconthursday" class="image-day"></div>
+            <p class="weather-day-count dayly invis thursday"></p>
+            <div class="weather-day-indicators">
+                <div class="weather-indicator nulled">
+                </div>
+            </div>
+            <p class="weather-day-count nightly invis thursday4"></p>
+        </div>
+        <div class="weather-day" id="friday">
+            <p class="weather-day-name">FRI</p>
+            <div id="iconfriday" class="image-day"></div>
+            <p class="weather-day-count dayly invis friday"></p>
+            <div class="weather-day-indicators">
+                <div class="weather-indicator nulled">
+                </div>
+            </div>
+            <p class="weather-day-count nightly invis friday5"></p>
+        </div>
+        <div class="weather-day" id="saturday">
+            <p class="weather-day-name">SAT</p>
+            <div id="iconsaturday" class="image-day"></div>
+            <p class="weather-day-count dayly invis saturday"></p>
+            <div class="weather-day-indicators">
+                <div class="weather-indicator nulled">
+                </div>
+            </div>
+            <p class="weather-day-count nightly invis saturday6"></p>
+        </div>
+        <div class="weather-day" id="sunday">
+            <p class="weather-day-name">SUN</p>
+            <div id="iconsunday" class="image-day"></div>
+            <p class="weather-day-count dayly invis sunday"></p>
+            <div class="weather-day-indicators">
+                <div class="weather-indicator nulled">
+                </div>
+            </div>
+            <p class="weather-day-count nightly invis sunday7"></p>
+        </div>
+        <div class="grid-bg-1 grid-bg"></div>
+        <div class="grid-bg-2 grid-bg"></div>
+        <div class="grid-bg-3 grid-bg"></div>
+        <div class="grid-bg-4 grid-bg"></div>
+    </section>
+    <!--<div class="grid">
+			<div class="row">
+ 				<div class="col-xs-4 col">
+ 					<div class="placement-block"></div>
+ 						
+ 				</div>
+ 				<div class="col-xs-8 col">
+ 					<div class="placement-block"></div>
+
+ 				</div>
+ 			</div>
+ 		</div>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/weather-widget.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
